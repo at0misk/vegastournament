@@ -1,0 +1,151 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+*{
+	color: #262626;
+}
+
+ h1, h2, h3, h4, h5, h6{
+ 	font-family: 'Oswald', sans-serif;
+ }
+
+ body{
+ 	background-color: #dcdcdc;
+ }
+
+ .nav-cont{
+ 	background-color: #262626;
+ 	margin-bottom: 30px;
+ }
+
+ .logo-place-holder{
+ 	color: white;
+ }
+
+ .register-header{
+ 	color: #ebb21e;
+ }
+
+ .faq{
+ 	color: white;
+ }
+
+ .navbar-toggler{
+ 	border-color: white !important;
+ 	/*background-color: white;*/
+ }
+
+ .footer{
+ 	background-color: #b9b9b9;
+ 	min-height: 200px;
+ 	padding-top: 30px;
+ 	margin-top: 30px;
+ }
+
+ .footer-copy{
+    font-size: 0.7em;
+    margin: 0px;
+ }
+
+ .footer-copy-div{
+ 	padding-top: 25px;
+ 	padding-bottom: 15px;
+  text-align: right;
+ }
+
+ .reg-div{
+ 	text-align: center;
+    background-color: #262626;
+    color: white;
+    min-height: 350px;
+    padding-top: 75px;
+}
+
+ .t_and_c{
+ 	display: block;
+ 	color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem; 
+ }
+
+ .t_and_c label{
+ 	color: white;
+ }
+
+ .btn-register { 
+  color: #FFFFFF; 
+  background-color: #EBB21E; 
+  border-color: #8F6C13;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 48px;
+  margin-top: 30px;
+  display: block;
+  /* text-align: center; */
+  margin: 0px auto;
+  margin-top: 30px;
+  padding: 1% 5%;
+} 
+ 
+.btn-register:hover, 
+.btn-register:focus, 
+.btn-register:active, 
+.btn-register.active, 
+.open .dropdown-toggle.btn-register { 
+  color: #FFFFFF; 
+  background-color: #B38717; 
+  border-color: #8F6C13; 
+} 
+ 
+.btn-register:active, 
+.btn-register.active, 
+.open .dropdown-toggle.btn-register { 
+  background-image: none; 
+} 
+ 
+.btn-register.disabled, 
+.btn-register[disabled], 
+fieldset[disabled] .btn-register, 
+.btn-register.disabled:hover, 
+.btn-register[disabled]:hover, 
+fieldset[disabled] .btn-register:hover, 
+.btn-register.disabled:focus, 
+.btn-register[disabled]:focus, 
+fieldset[disabled] .btn-register:focus, 
+.btn-register.disabled:active, 
+.btn-register[disabled]:active, 
+fieldset[disabled] .btn-register:active, 
+.btn-register.disabled.active, 
+.btn-register[disabled].active, 
+fieldset[disabled] .btn-register.active { 
+  background-color: #EBB21E; 
+  border-color: #8F6C13; 
+} 
+ 
+.btn-register .badge { 
+  color: #EBB21E; 
+  background-color: #FFFFFF; 
+}
+
+.modal-dialog{
+	max-width: 700px;
+}
+
+.errors{
+	color: #dc3545;
+	display: block;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 15px;
+}

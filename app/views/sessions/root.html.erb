@@ -1,0 +1,65 @@
+<div class="row top-row">
+	<div class="col-sm-12">
+		<!-- <h1>ARCHER SPORTS TRAVEL PRESENTS</h1> -->
+		<%= image_tag('flyer', :class => 'img-responsive', :usemap => "#flyermap", :width => '1110', :height => '718.23') %>
+		<map name="flyermap">
+		  <area shape="rect" coords="30,385,340,525" href="#" alt="Register" onclick="regScroll()">
+		</map>
+	</div>
+</div>
+<div class="row mid-row faq-row">
+	<div class="col-sm-12">
+		<h3 class="faq-header-mid">TOURNAMENT RULES AND FAQ</h3>
+		<dl class="faq-dl">
+			<dt><h5>ETIAM MALESUADA EGET DOLOR EU PORTTITOR?</h5></dt>
+			<dd>Mauris sit amet dui et ipsum placerat sagittis. Vestibulum eget nisi vitae tellus commodo eleifend a nec nulla. Aenean aliquet quis eros ut porttitor. Etiam et consectetur lacus. Donec auctor dolor sit amet sem bibendum porta. Donec ac lorem ut leo pellentesque volutpat.</dd>
+			<dt><h5>SED GRAVIDA VEHICULA ARCU, SIT AMET SODALES ODIO ULLAMCORPER NON?</h5></dt>
+			<dd>Sed eget nibh in erat dapibus convallis consequat quis tortor. Fusce consectetur, odio sit amet pharetra convallis, velit velit malesuada orci, vel lacinia augue ante eu ex. Maecenas iaculis quam vel orci lacinia lacinia. Nam sit amet suscipit eros. Nam facilisis, quam porta tristique mattis, metus urna eleifend odio, semper elementum mi dui id est. Donec at ex magna.</dd>
+			<dt><h5>PHASELLUS AT PORTTITOR IPSUM?</h5></dt>
+			<dd>Cras lobortis velit vitae lorem pharetra ultrices. Etiam ut orci volutpat, gravida lectus in, eleifend risus. Suspendisse volutpat tincidunt sem, et pulvinar tellus cursus at. Etiam dapibus vestibulum eros, quis convallis nibh lobortis quis. Etiam eu dictum ipsum. Aenean pretium nisi vel eros sollicitudin cursus.</dd>
+			<dt><h5>MAECENAS RUTRUM ELEIFEND ODIO SIT AMET SODALES?</h5></dt>
+			<dd>Aenean et ultrices metus. Pellentesque ullamcorper libero a lectus vehicula, vitae eleifend sapien bibendum. Sed euismod dolor at maximus efficitur. In porttitor magna at nisi interdum vestibulum. Aenean cursus suscipit ex, ut fringilla arcu faucibus vel. Mauris nec ullamcorper augue. Duis vitae blandit nunc. Quisque interdum libero neque, eu maximus risus auctor sed. Morbi vestibulum vehicula tincidunt. Vivamus sed aliquam mauris, at vulputate eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</dd>
+		</dl>
+	</div>
+</div>
+<hr/>
+<div class="row mid-row reg-row">
+	<div class="col-sm-12 reg-div">
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="checkbox" id="check" value="agree">
+		  <label class="form-check-label t_and_c" for="check">I HAVE READ AND AGREE TO THE <a href="#" data-toggle="modal" data-target="#termsModal">TERMS AND CONDITIONS</a></label>
+		</div>
+		<span class="errors"></span>
+		<button class="btn btn-register" onclick="checkAgree()">REGISTER</button>
+	</div>
+
+<!-- Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="terms-modal-title" id="termsModalLabel">TERMS AND CONDITIONS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="t_and_c_p">Aenean et ultrices metus. Pellentesque ullamcorper libero a lectus vehicula, vitae eleifend sapien bibendum. Sed euismod dolor at maximus efficitur. In porttitor magna at nisi interdum vestibulum. Aenean cursus suscipit ex, ut fringilla arcu faucibus vel. Mauris nec ullamcorper augue. Duis vitae blandit nunc. Quisque interdum libero neque, eu maximus risus auctor sed. Morbi vestibulum vehicula tincidunt. Vivamus sed aliquam mauris, at vulputate eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p class="t_and_c_p">Sed eget nibh in erat dapibus convallis consequat quis tortor. Fusce consectetur, odio sit amet pharetra convallis, velit velit malesuada orci, vel lacinia augue ante eu ex. Maecenas iaculis quam vel orci lacinia lacinia. Nam sit amet suscipit eros. Nam facilisis, quam porta tristique mattis, metus urna eleifend odio, semper elementum mi dui id est. Donec at ex magna.</p>
+        <p class="t_and_c_p">Cras lobortis velit vitae lorem pharetra ultrices. Etiam ut orci volutpat, gravida lectus in, eleifend risus. Suspendisse volutpat tincidunt sem, et pulvinar tellus cursus at. Etiam dapibus vestibulum eros, quis convallis nibh lobortis quis. Etiam eu dictum ipsum. Aenean pretium nisi vel eros sollicitudin cursus.</p>
+        <p class="t_and_c_p">Mauris sit amet dui et ipsum placerat sagittis. Vestibulum eget nisi vitae tellus commodo eleifend a nec nulla. Aenean aliquet quis eros ut porttitor. Etiam et consectetur lacus. Donec auctor dolor sit amet sem bibendum porta. Donec ac lorem ut leo pellentesque volutpat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+    $('#rules-faq').click(function() {
+		$('html, body').animate({
+		    scrollTop: $(".faq-row").offset().top
+		}, 1000);
+    });
+});
+</script>

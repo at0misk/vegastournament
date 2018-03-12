@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vegastournament</title>
+    <%= csrf_meta_tags %>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.rwdImageMaps.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.rwdImageMaps.min.js', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" type="image/png" href="<%= image_path('favi') %>" sizes="16x16">
+  </head>
+  <body>
+<div class="container-fluid nav-cont">
+<nav class="navbar navbar-expand-sm navbar-dark bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><h4 class="logo-place-holder">ARCHER SPORTS TRAVEL</h4></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+<!--       <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> -->
+    </ul>
+    <ul class="navbar-nav navbar-right">
+    	<li class="nav-item">
+    		<a class="nav-link" href="#" id="rules-faq"><h4 class="faq">RULES / FAQ</h4></a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="#" id="reg" onclick="regScroll()"><h4 class="register-header">REGISTER</h4></a>
+    	</li>
+    </ul>
+  </div>
+</nav>
+</div>
+  	<div class="container">
+	    <%= yield %>
+	</div>
+	<footer class="footer">
+	  <div class="container">
+	  	<div class="row">
+		  	<div class="col-sm-4">
+		  		<%= image_tag('archerlogo', :class => 'img-responsive') %>
+		  	</div>
+		  	<div class="col-sm-4">
+		  	</div>
+		  	<div class="col-sm-4 footer-copy-div">
+		  		<p class="footer-copy">&copy; Copyright 2018. All Rights Reserved. Archer Travel Service, Inc.</p>
+				<p class="footer-copy">Seller of Travel: CA 2001330-10, FL 35395</p>
+				<p class="footer-copy">archertravelmailer@gmail.com</p>
+				<p class="footer-copy">(800) 272-4377</p>
+		  	</div>
+		</div>
+	  </div>
+	</footer>
+</body>
+<script type="text/javascript">
+</script>
+</html>
