@@ -7,3 +7,12 @@
 	/*font-size: 72px;*/
 	margin: 30px auto;
 }
+
+.info-h small{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+}
+
+.coming-soon{
+	margin-top: 60px;
+}
