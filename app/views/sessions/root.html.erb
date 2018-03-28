@@ -107,6 +107,33 @@
 </div>
 <script type="text/javascript">
 $(document).ready(function(e) {
+        $("#reg_form").submit(function(e) {
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+        var choice = confirm("You are being redirected to a secure payment method.")
+        if(choice){
+        var url = "register"; // the script where you handle the form input.
+
+        $.ajax({
+               type: "POST",
+               url: url,
+               data: $("#reg_form").serialize(), // serializes the form's elements.
+               success: function(data)
+               {
+                   if(data['tournament_type'] == 'mens' || data['tournament_type'] == 'womens'){
+                        console.log("MENS OR WOMENS TOURNAMENT");
+                        window.location.replace("https://quickclick.com/r/ugkxv")
+                   }
+                   else if (data['tournament_type'] == 'coed'){
+                        console.log("COED TOURNAMENT");
+                        window.location.replace("https://quickclick.com/r/vfjhd")
+                   }
+                   console.log(data); // show response from the php script.
+               }
+             });
+
+        }
+        return false;
+    });
     $('img[usemap]').rwdImageMaps();
     $('#rules-faq').click(function() {
 		$('html, body').animate({
