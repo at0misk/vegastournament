@@ -16,3 +16,18 @@
 .coming-soon{
 	margin-top: 60px;
 }
+
+.input-col{
+	margin: 0px auto;
+}
+
+.radio-inline{
+	color: white;
+ 	font-family: 'Oswald', sans-serif;
+ 	font-size: 1.5em;
+}
+
+input[type='radio'], label{
+    vertical-align: top;
+    margin-top: 10px;
+}

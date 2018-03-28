@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team: MyString
+  first: MyString
+  last: MyString
+  email: MyString
+  phone: MyString
+  tournament_type: MyString
+  agree: false
+
+two:
+  team: MyString
+  first: MyString
+  last: MyString
+  email: MyString
+  phone: MyString
+  tournament_type: MyString
+  agree: false
